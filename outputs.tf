@@ -2,10 +2,5 @@
 # SPDX-License-Identifier: MPL-2.0
 
 output "instance_ami" {
-  value = aws_instance.ubuntu.ami
+  value = aws_vpc.example.id
 }
-
-output "instance_arn" {
-  value = aws_instance.ubuntu.arn
-}
-
